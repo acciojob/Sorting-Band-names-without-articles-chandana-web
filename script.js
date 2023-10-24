@@ -1,6 +1,6 @@
 //your code here
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-let wiartwiart=[];
+let wiart=[];
 let map={};
 for (let i = 0; i<touristSpots.length ; i++) {
 	let str= touristSpots[i];
