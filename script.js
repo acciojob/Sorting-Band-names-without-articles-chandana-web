@@ -7,7 +7,7 @@ for (let i = 0; i<touristSpots.length ; i++) {
 str=str.replace(/\ba\b|\ban\b|\bthe\b/gi, "");
 	str=str.replace(/ +/gi, " ");
 	str=str.trim();
-	map[str]=arr[i];
+	map[str]=touristSpots[i];
 	wiart.push(str);
 }
 wiart.sort();
