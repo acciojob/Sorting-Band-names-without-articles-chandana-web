@@ -1,17 +1,17 @@
 //your code here
-let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-let wiart=[];
+let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+let withoutArticles=[];
 let map={};
-for (let i = 0; i<touristSpots.length ; i++) {
-	let str= touristSpots[i];
-str=str.replace(/\ba\b|\ban\b|\bthe\b/gi, "");
+for(let i = 0; i<arr.length ; i++) {
+	let str= arr[i];
+	str=str.replace(/\ba\b|\ban\b|\bthe\b/gi, "");
 	str=str.replace(/ +/gi, " ");
 	str=str.trim();
-	map[str]=touristSpots[i];
-	wiart.push(str);
+	map[str]=arr[i];
+	withoutArticles.push(str);
 }
-wiart.sort();
-for(let i=0;i<wiart.length;i++){
-	console.log(map[wiart[i]]);
+withoutArticles.sort();
+for(let i=0;i<withoutArticles.length;i++){
+	console.log(map[withoutArticles[i]]);
 	
 }
